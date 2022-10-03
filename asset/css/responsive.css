@@ -1,0 +1,60 @@
+/* PC */
+@media (min-width: 1024px) {
+    .hide-on-mobile-pc {
+        display: none;
+    }
+
+    .hide-on-mobile-pc-tablet {
+        display: none;
+    }
+
+    .mobile__category {
+        display: none;
+    }
+}
+
+/* Mobile - Tablet */
+@media (max-width: 1023px) {}
+
+/* Tablet */
+@media (min-width:740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+
+    }
+
+}
+
+/* Mobile */
+@media (max-width:739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+
+/* region Chia 5 cột */
+.col-12d5 {
+    flex: 0 0 auto;
+    width: 20%;
+    max-width: 9999px;
+
+}
+
+.col-12d5-x2 {
+    flex: 0 0 auto;
+    width: 40%;
+    max-width: 9999px;
+}
+
+.col-12d5-x3 {
+    flex: 0 0 auto;
+    width: 60%;
+    max-width: 9999px;
+}
+
+.col-12d5-x4 {
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 9999px;
+}
