@@ -30,6 +30,33 @@
     .hide-on-mobile {
         display: none;
     }
+
+
+    .navbar-menu .logo-home {
+        width: 10vh;
+    }
+
+    .section-home h2 {
+        font-size: .8rem;
+        left: 29%;
+    }
+
+    .section-home {
+        justify-content: start;
+    }
+
+    .section-home .img-play {
+        top: 15%;
+    }
+
+    .navbar-menu .menu .menu-bar {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar-menu .menu {
+        padding: 0;
+    }
 }
 
 

@@ -1,8 +1,310 @@
+@font-face {
+    font-family: averta;
+    src: url(./asset/fonts/Averta-Semibold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: averta;
 }
 
+a {
+    text-decoration: none;
+}
+
+.fp-overflow {
+    overflow: visible !important;
+}
+
+
+
+/* #fp-nav {
+    left: 0;
+} */
+
+.fp-warning,
+.fp-watermark {
+    display: none;
+}
+
+
+.slick-list {
+    overflow: visible;
+}
+
+
+
+/* .fp-table {
+    display: block;
+} */
+
 :root {}
+
+.navbar-menu {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 1rem 1rem 0;
+    background-color: transparent;
+    z-index: 9;
+
+}
+
+.navbar-menu .logo-home {
+    width: 16vh;
+    cursor: pointer;
+}
+
+.navbar-menu .menu {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+    color: #FFFF;
+}
+
+.navbar-menu .menu .menu-bar {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-menu .menu .menu-name {
+    font-size: 1.2rem;
+}
+
+.menu-show {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #103A3E;
+    z-index: 10;
+    display: none !important;
+    transition: all 1s cubic-bezier(0, 0, 0, 0.95);
+}
+
+.menu-show.active {
+    display: flex !important;
+    transition: all 1s cubic-bezier(0, 0, 0, 0.95);
+}
+
+.menu-show .btn-close {
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.menu-show .menu-show-logo {
+    height: 100%;
+}
+
+.menu-show .btn-close span {
+    font-size: 1.2rem;
+    color: #FFFF;
+}
+
+.menu-show .menu-show-list {
+    margin: 0;
+    list-style: none;
+}
+
+.menu-show .menu-show-list .menu-show-item {
+    padding: 1rem;
+}
+
+.menu-show .menu-show-list .menu-show-item a {
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Content */
+
+/* Section Home */
+.section-home a img {
+    object-fit: cover;
+}
+
+.section-home h2 {
+    position: absolute !important;
+    top: 4%;
+    left: 35%;
+    z-index: 14;
+    color: #F5B863;
+    text-align: center;
+}
+
+.plyr__video-embed {
+    height: 100%;
+}
+
+.section-home .img-play {
+    top: 45%;
+    left: 45%;
+    transform: translateX(50%);
+    border: 1px solid #F5BB63;
+    background: linear-gradient(to bottom, rgba(255, 207, 138, 0.2) 2.06%, rgba(255, 255, 255, 0) 95.79%);
+    backdrop-filter: blur(5px);
+    width: 6.5vw;
+    height: 6.5vw;
+    cursor: pointer;
+}
+
+.section-home .img-play img {
+    width: 3vw;
+    height: 3vw;
+}
+
+/* Section PHƯƠNG ĐÔNG HOLDING */
+.section-phuong-dong {
+    background-color: #103A3E;
+    height: 100%;
+    width: 100%;
+}
+
+.section-phuong-dong h2 {
+    color: #F5B863;
+    margin-bottom: 8rem;
+}
+
+.section-phuong-dong .content {
+    background-color: #38524A;
+    border-radius: 20px;
+    padding: 2rem;
+    color: #FFF;
+    margin-bottom: 6rem;
+}
+
+.section-phuong-dong .content p {
+    font-size: .8rem;
+}
+
+.section-phuong-dong .content a {
+    color: #FFFF;
+    font-size: 1rem;
+}
+
+.section-phuong-dong .content a:hover {
+    transition: all .5s ease-in-out;
+    color: #bdbcbc;
+}
+
+/* Section Lĩnh vực hoạt động */
+.section-linh-vuc {
+    background-color: #103A3E;
+}
+
+.section-linh-vuc h2 {
+    color: #F5B863;
+    margin-bottom: 3.5rem;
+    margin-top: -4rem;
+
+}
+
+.section-linh-vuc .container {
+    overflow-x: clip;
+}
+
+.section-linh-vuc .content .img-content {}
+
+.section-linh-vuc .content img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 20vh;
+    background-color: #F5B863;
+    top: 0%;
+    left: 0;
+}
+
+.section-linh-vuc .bg-linh-vuc {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-linh-vuc .content-heading {
+    top: -12%;
+    left: 20%;
+    background: linear-gradient(to bottom, rgba(255, 207, 138, 0.2) 2.06%, rgba(255, 255, 255, 0) 95.79%);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 50vw;
+    padding: 1rem;
+    color: #FFFF;
+}
+
+
+
+.section-linh-vuc img {
+    height: 100%;
+    width: 90%;
+    object-fit: contain;
+    border: 1px solid #F5B863;
+    border-radius: 12px;
+}
+
+.section-linh-vuc button.slide-arrow {
+    background: transparent;
+    border: none;
+
+}
+
+.section-linh-vuc button.slide-arrow.prev-arrow.slick-arrow {
+    position: absolute;
+    left: 44%;
+    transform: translateX(50%);
+    z-index: 3;
+    bottom: -4%;
+    z-index: 5;
+}
+
+.section-linh-vuc button.slide-arrow.next-arrow.slick-arrow::before {
+    position: absolute;
+    content: "";
+    border: 1px solid #F5BB63;
+    background: linear-gradient(to bottom, rgba(255, 207, 138, 0.2) 2.06%, rgba(255, 255, 255, 0) 95.79%);
+    backdrop-filter: blur(5px);
+    width: 6.5vw;
+    height: 6.5vw;
+    z-index: -1;
+    top: -64%;
+    left: -100%;
+    border-radius: 50%;
+}
+
+.section-linh-vuc button.slide-arrow.next-arrow.slick-arrow {
+    position: absolute;
+    left: 47%;
+    transform: translateX(50%);
+    bottom: -4%;
+    z-index: 4;
+}
+
+/* Footer */
+.footer-menu {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 0rem 1rem 2rem;
+}
+
+.footer-menu .social-network p,
+span {
+    font-size: 1rem;
+    margin: 0;
+    color: #FFFF;
+}
+
+
+.footer-menu .social-network .icon svg {
+    margin: 0 .5rem;
+}
