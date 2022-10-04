@@ -9,9 +9,9 @@ new fullpage('#fullpage', {
         console.log("Leaving section" + origin.index);
     },
 });
-new fullPage('#fullpage', {
-    responsiveWidth: 800
-});
+// new fullPage('#fullpage', {
+//     responsiveWidth: 800
+// });
 
 //   .section-home .img-play
 $(".section-home .img-play").click(function (e) { 
