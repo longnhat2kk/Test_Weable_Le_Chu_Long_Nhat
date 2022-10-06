@@ -1,17 +1,23 @@
 
 // Fullpage
-new fullpage('#fullpage', {
+$(document).ready(function() {
+  new fullpage('#fullpage', {
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
     navigation: true,
-    responsiveWidth: 700,
-    anchors: ['about-us','home', 'contact'],
+    navigationTooltips: ['PHƯƠNG ĐÔNG HOLDING', 'Giới thiệu','Lĩnh vực hoạt động', '.section-linh-vuc'],
+    showActiveTooltip:true,
     parallax: true,
+    
     onLeave: function(origin, destination, direction){
         console.log("Leaving section" + origin.index);
     },
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(false);
 });
-// new fullPage('#fullpage', {
-//     responsiveWidth: 800
-// });
 
 //   .section-home .img-play
 $(".section-home .img-play").click(function (e) { 
@@ -78,8 +84,8 @@ $('.slick-slider-linh-vuc').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay:true,
-    // autoplaySpeed:1500,
+    autoplay:false,
+    autoplaySpeed:1500,
     prevArrow: '<button class="slide-arrow prev-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFF" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg></button>',
     nextArrow: '<button class="slide-arrow next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFF" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></button>',
     responsive: [

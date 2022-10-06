@@ -155,6 +155,7 @@ a {
 .section-home .img-play img {
     width: 3vw;
     height: 3vw;
+    object-fit: contain;
 }
 
 /* Section PHƯƠNG ĐÔNG HOLDING */
@@ -229,7 +230,7 @@ a {
 
 .section-linh-vuc .content-heading {
     top: -12%;
-    left: 20%;
+    left: 19%;
     background: linear-gradient(to bottom, rgba(255, 207, 138, 0.2) 2.06%, rgba(255, 255, 255, 0) 95.79%);
     border-radius: 20px;
     backdrop-filter: blur(5px);
