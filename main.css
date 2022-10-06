@@ -199,8 +199,8 @@ a {
 
 .section-linh-vuc h2 {
     color: #F5B863;
-    margin-bottom: 3.5rem;
-    margin-top: -4rem;
+    margin-bottom: 10rem;
+    margin-top: -5rem;
 
 }
 
@@ -229,7 +229,7 @@ a {
 }
 
 .section-linh-vuc .content-heading {
-    top: -12%;
+    top: -16%;
     left: 19%;
     background: linear-gradient(to bottom, rgba(255, 207, 138, 0.2) 2.06%, rgba(255, 255, 255, 0) 95.79%);
     border-radius: 20px;
