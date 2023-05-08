@@ -3,11 +3,6 @@
     .section-linh-vuc .content-heading {
         left: 14%;
     }
-
-    .section-linh-vuc button.slide-arrow.next-arrow.slick-arrow::before {
-        left: -119%;
-        top: -72%;
-    }
 }
 
 /* PC */
